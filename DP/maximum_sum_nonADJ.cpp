@@ -16,7 +16,8 @@ int tabu(int arr[], int n){
 
     if(n<0) return 0;
 
-    vector<int> dp(n);
+    vector<int> dp(n,0);
+    
     dp[0]= arr[0];
 
     for (int i = 1; i < n; i++)
